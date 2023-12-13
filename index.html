@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+
+		<div class="index-sliders _container">
+			<!--в слайдере новинок к слайду с классом card Добавить класс new -->
+			@@include('_popular-slider.html',{
+			"title": "Популярные товары",
+			"prev": "1",
+			"next": "1",
+			"name": ""
+			})
+		</div>
+
+		<section class="index-about">
+			<div class="index-about__container _container">
+				<div class="index-about__row">
+					<div class="index-about__logo">
+						<img src="img/logo/catalog_logo.svg" alt="">
+						<img src="img/logo_main.png" alt="">
+					</div>
+					<div class="index-about__desc">Компания «БригФорм» – крупнейший производитель СИЗ рук в Красноярском крае, с локализацией производственных мощностей непосредственно на территории присутствия</div>
+
+					<div class="index-about__regalia-list">
+						<div class="index-about__regalia">
+							<div class="index-about__regalia-num">15</div>
+							<div class="index-about__regalia-text">Лет на рынке</div>
+						</div>
+						<div class="index-about__regalia">
+							<div class="index-about__regalia-num">100 000+</div>
+							<div class="index-about__regalia-text">швейных изделий в год</div>
+						</div>
+						<div class="index-about__regalia">
+							<div class="index-about__regalia-num">5300+</div>
+							<div class="index-about__regalia-text">клиентов</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="articles _container index-articles">
+			<div class="articles__title main-title">Новости и полезные статьи</div>
+
+			<div class="articles__content">
+				<div class="articles__item">
+					<a href="" class="article-preview">
+						<div class="article-preview__image js_ibg">
+							<img loading="lazy" src="img/pictures/article_1.png" alt="">
+						</div>
+						<div class="article-preview__content">
+							<div class="article-preview__header">
+								<div class="article-preview__name">Спецобувь Safety Jogger – рабочая обувь высокого качества</div>
+								<div class="article-preview__labels">
+									<div class="article-preview__label">Обувь</div>
+									<div class="article-preview__label">Обзоры</div>
+								</div>
+							</div>
+							<div class="article-preview__text">Материал верха рабочей обуви Safety Jogger – это гладкая кожа и нубук, кордура (cordura) и современные текстильные материалы. Материалом подошвы является высококачественный полиуретан, термопилиуретан, нитрил.</div>
+						</div>
+					</a>
+				</div>
+				<div class="articles__item">
+					<a href="" class="article-preview">
+						<div class="article-preview__image js_ibg">
+							<img loading="lazy" src="img/pictures/article_2.png" alt="">
+						</div>
+						<div class="article-preview__content">
+							<div class="article-preview__header">
+								<div class="article-preview__name">Выбираем влагозащитный плащ</div>
+								<div class="article-preview__labels">
+									<div class="article-preview__label">Обзоры</div>
+								</div>
+							</div>
+							<div class="article-preview__text">Люди, которые работают много не в стенах офисных зданий и торговых центрах часто попадают под дождь в теплые времена года. Заболевать часто из-за погодных условий мало кому добровольно хочется. Поэтому, чтобы обезопасить себя необходим влагозащитный плащ. Рассмотрим, какие варианты существуют и какой вид предпочтительнее.</div>
+						</div>
+					</a>
+				</div>
+				<div class="articles__item">
+					<a href="" class="article-preview">
+						<div class="article-preview__image js_ibg">
+							<img loading="lazy" src="img/pictures/article_1.png" alt="">
+						</div>
+						<div class="article-preview__content">
+							<div class="article-preview__header">
+								<div class="article-preview__name">Спецобувь Safety Jogger – рабочая обувь высокого качества</div>
+								<div class="article-preview__labels">
+									<div class="article-preview__label">Обувь</div>
+									<div class="article-preview__label">Обзоры</div>
+								</div>
+							</div>
+							<div class="article-preview__text">Материал верха рабочей обуви Safety Jogger – это гладкая кожа и нубук, кордура (cordura) и современные текстильные материалы. Материалом подошвы является высококачественный полиуретан, термопилиуретан, нитрил.</div>
+						</div>
+					</a>
+				</div>
+				<div class="articles__item">
+					<a href="" class="article-preview">
+						<div class="article-preview__image js_ibg">
+							<img loading="lazy" src="img/pictures/article_2.png" alt="">
+						</div>
+						<div class="article-preview__content">
+							<div class="article-preview__header">
+								<div class="article-preview__name">Выбираем влагозащитный плащ</div>
+								<div class="article-preview__labels">
+									<div class="article-preview__label">Обзоры</div>
+								</div>
+							</div>
+							<div class="article-preview__text">Люди, которые работают много не в стенах офисных зданий и торговых центрах часто попадают под дождь в теплые времена года. Заболевать часто из-за погодных условий мало кому добровольно хочется. Поэтому, чтобы обезопасить себя необходим влагозащитный плащ. Рассмотрим, какие варианты существуют и какой вид предпочтительнее.</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</section>
+
+		<div class="index-sliders _container">
+			<!-- в слайдере акций к слайду с классом card Добавить класс liquidation -->
+			@@include('_popular-slider.html',{
+			"title": "Новинки",
+			"prev": "2",
+			"next": "2",
+			"name": ""
+			})
+		</div>
+
+		<section class="index-callback _container">
+			<div class="callback">
+				<div class="callback__title">Подбор спецодежды</div>
+				<div class="callback__row">
+					<div class="callback__col">
+						<div class="callback__text">Оставьте свои контактные данные и наши специалисты подберут для вас необходимые товары и сделают индивидуальное предложение</div>
+						<div class="callback__bg"></div>
+					</div>
+					<div class="callback__col">
+						<div class="callback__form">
+							<form action="" class="form">
+								<div class="form__line">
+									<input type="text" name="form[]" data-error="Ошибка" data-value="Ваше имя" class="form__input">
+								</div>
+								<div class="form__line">
+									<input required data-parsley-required-message="Введите телефон" type="text" name="form[]" data-value="Контактный телефон" class="form__input js_phone">
+								</div>
+								<div class="form__row">
+									<button type="submit" class="form__button trnt-btn">Задать вопрос</button>
+									<div class="form__checkbox">
+										<label class="checkbox">
+											<input data-error="Ошибка" class="checkbox__input" required type="checkbox" checked value="1" name="form[]">
+											<span class="checkbox__text"><span>Я даю свое согласие на <a class="js_popup-link" href="#consent">обработку персональных данных</a></span></span>
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq _container index-faq">
+			<div class="faq__title main-title">Ответы на популярные вопросы</div>
+			<div data-spollers data-one-spoller class="faq__spollers">
+				<div class="faq__block">
+					<div data-spoller class="faq__spoller">
+						<div class="faq__subtitle">Как попасть на экскурсию на производство?</div>
+						<div class="faq__spoller-icon">
+							<svg class="faq__spoller-svg">
+								<use xlink:href="img/svg/sprite.svg#icon_spoller"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="faq__text">Отмеченные площадные изменения мощностей орогенез интенсивно причленяет к себе вторичный протерозой. Движение плит, как считают многие, - это ламинарное движение целесообразно аккумулирует алмаз.</div>
+				</div>
+				<div class="faq__block">
+					<div data-spoller class="faq__spoller">
+						<div class="faq__subtitle">Как вам удается доставить любой заказ за один день?</div>
+						<div class="faq__spoller-icon">
+							<svg class="faq__spoller-svg">
+								<use xlink:href="img/svg/sprite.svg#icon_spoller"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="faq__text">Отмеченные площадные изменения мощностей орогенез интенсивно причленяет к себе вторичный протерозой. Движение плит, как считают многие, - это ламинарное движение целесообразно аккумулирует алмаз.</div>
+				</div>
+				<div class="faq__block">
+					<div data-spoller class="faq__spoller">
+						<div class="faq__subtitle">Делаете ли вы спецодежду для служебных собак?</div>
+						<div class="faq__spoller-icon">
+							<svg class="faq__spoller-svg">
+								<use xlink:href="img/svg/sprite.svg#icon_spoller"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="faq__text">Отмеченные площадные изменения мощностей орогенез интенсивно причленяет к себе вторичный протерозой. Движение плит, как считают многие, - это ламинарное движение целесообразно аккумулирует алмаз.</div>
+				</div>
+				<div class="faq__block">
+					<div data-spoller class="faq__spoller">
+						<div class="faq__subtitle">А для котиков?</div>
+						<div class="faq__spoller-icon">
+							<svg class="faq__spoller-svg">
+								<use xlink:href="img/svg/sprite.svg#icon_spoller"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="faq__text">Отмеченные площадные изменения мощностей орогенез интенсивно причленяет к себе вторичный протерозой. Движение плит, как считают многие, - это ламинарное движение целесообразно аккумулирует алмаз.</div>
+				</div>
+				<div class="faq__block">
+					<div data-spoller class="faq__spoller">
+						<div class="faq__subtitle">Сколько стоят ботики?</div>
+						<div class="faq__spoller-icon">
+							<svg class="faq__spoller-svg">
+								<use xlink:href="img/svg/sprite.svg#icon_spoller"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="faq__text">Отмеченные площадные изменения мощностей орогенез интенсивно причленяет к себе вторичный протерозой. Движение плит, как считают многие, - это ламинарное движение целесообразно аккумулирует алмаз.</div>
+				</div>
+			</div>
+		</section>
+
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>
